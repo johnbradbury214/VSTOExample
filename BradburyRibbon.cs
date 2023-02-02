@@ -56,6 +56,10 @@ namespace VSTOAddInBradburyChart
                 Range valueRange = currentSheet.Range["E" + (n + 3)];
                 valueRange.Value = columnResults[n];
             }
+              }
+            // make it look nicer !
+            Range addBorder = currentSheet.Range["D3:E" + (columnTitles.Length + 2)];
+            addBorder.BorderAround2(XlLineStyle.xlDouble, XlBorderWeight.xlMedium, XlColorIndex.xl
         }
     }
 }
